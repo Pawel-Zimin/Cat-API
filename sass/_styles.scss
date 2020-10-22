@@ -1,0 +1,72 @@
+@import 'variables';
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   background-color: #777;
+}
+
+.img-container {
+   position: relative;
+   width: calc(100% - 16px);
+   height: calc(50vh - 12px);
+   margin: 8px;
+   border: 2px solid antiquewhite;
+   background-color: antiquewhite;
+}
+
+.description-container{
+   position: absolute;
+   top: 8px;
+   right: 8px;
+   height: calc(50vh - 12px);
+   width: calc((100% - 16px) / 4);
+   border: 2px solid black;
+   overflow: hidden;
+}
+
+.breed-description{
+   padding: 4px;
+   font-family: $main-font;
+   font-size: 20px;
+   line-height: 1.4;
+}
+
+.img-container>img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   max-height: 100%;
+   width: auto;
+   max-width: 75%;
+}
+
+.btns-container{
+   display: flex;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+   height: calc(50vh - 12px);
+   width: calc(100% - 16px);
+   border: 2px solid antiquewhite;
+   margin: 8px;
+   background-color: $main-btn-color;
+}
+
+.breedNameBtn {
+   background-color: $main-btn-color;
+   color: $btn-text-color;
+   font-family: $main-font;
+   flex-basis: 10%;
+   padding: 3px 6px;
+   border: 1px solid antiquewhite;
+   transition: 0.4s;
+   cursor: pointer;
+}
+
+.breedNameBtn:hover{
+   background-color: $hovered-btn-color;
+}
